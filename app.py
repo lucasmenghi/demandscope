@@ -5,7 +5,7 @@ import streamlit as st
 
 ROOT = Path(__file__).resolve().parent
 st.set_page_config(page_title='DemandScope',page_icon='📈',layout='wide')
-st.image(str(ROOT/'assets/demandscope-cover.webp'),width='stretch')
+st.image(str(ROOT/'assets/demandscope-cover-v2.webp'),width='stretch')
 st.title('DemandScope · Previsão de vendas em 28 dias')
 st.caption('Walmart/M5 · avaliação histórica · Lucas Menghi')
 r = json.loads((ROOT/'reports/results.json').read_text(encoding='utf-8'))

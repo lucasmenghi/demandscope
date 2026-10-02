@@ -1,6 +1,6 @@
 # DemandScope · Previsão de vendas em 28 dias
 
-![DemandScope · Walmart/M5 · Previsão de vendas](assets/demandscope-cover.webp)
+![DemandScope · Walmart/M5 · Previsão de vendas](assets/demandscope-cover-v2.webp)
 
 **Como prever vendas por loja e departamento para apoiar planejamento de reposição?**
 
