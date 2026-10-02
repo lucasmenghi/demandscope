@@ -1,0 +1,70 @@
+{
+  "selected": {
+    "name": "HGB31",
+    "family": "hgb",
+    "leaves": 31,
+    "l2": 10.0
+  },
+  "artifact_sha256": "dc08067caf97f6473e4c576a850b988f49f7ed6d2c2a9c34be831638011af3b0",
+  "train_end": "2016-04-24",
+  "test_start": "2016-04-25",
+  "test_end": "2016-05-22",
+  "quantiles90": {
+    "FOODS_1": 0.40371156461717567,
+    "FOODS_2": 0.25902270833504143,
+    "FOODS_3": 0.21661852785066152,
+    "HOBBIES_1": 0.3008597126457137,
+    "HOBBIES_2": 0.5687090842860439,
+    "HOUSEHOLD_1": 0.24037169582246684,
+    "HOUSEHOLD_2": 0.284051209100191
+  },
+  "selection": "minimum mean WAPE over four development origins",
+  "models": [
+    {
+      "name": "SeasonalNaive7",
+      "family": "seasonal"
+    },
+    {
+      "name": "WeekdayMean8",
+      "family": "weekday_mean"
+    },
+    {
+      "name": "ETS",
+      "family": "ets",
+      "log": false
+    },
+    {
+      "name": "ETSLog",
+      "family": "ets",
+      "log": true
+    },
+    {
+      "name": "Ridge10",
+      "family": "ridge",
+      "alpha": 10.0
+    },
+    {
+      "name": "Ridge100",
+      "family": "ridge",
+      "alpha": 100.0
+    },
+    {
+      "name": "HGB15",
+      "family": "hgb",
+      "leaves": 15,
+      "l2": 5.0
+    },
+    {
+      "name": "HGB31",
+      "family": "hgb",
+      "leaves": 31,
+      "l2": 10.0
+    }
+  ],
+  "origins": [
+    1801,
+    1829,
+    1857,
+    1885
+  ]
+}

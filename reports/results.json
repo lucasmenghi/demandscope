@@ -1,0 +1,250 @@
+{
+  "project": "DemandScope",
+  "audit": {
+    "product_store_series": 30490,
+    "stores": 10,
+    "departments": 7,
+    "modeled_series": 70,
+    "calendar_days": 1969,
+    "observed_days": 1941,
+    "observed_panel_rows": 135870,
+    "development_end": "2016-04-24",
+    "test_start": "2016-04-25",
+    "test_end": "2016-05-22",
+    "zeros": 363,
+    "negative_sales": 0,
+    "missing_days": 0,
+    "total_units_all_observed": 66927173,
+    "scope": "All 70 store-department series; prices excluded; no official full-hierarchy scoring."
+  },
+  "selected": {
+    "name": "HGB31",
+    "family": "hgb",
+    "leaves": 31,
+    "l2": 10.0
+  },
+  "development": [
+    {
+      "model": "HGB31",
+      "wape": 0.11456964686980789,
+      "mae": 67.43554712189595,
+      "bias": -0.0007092411323603312,
+      "mean_mase7": 0.9334930869806599,
+      "mean_rmsse": 0.8139657567414378
+    },
+    {
+      "model": "HGB15",
+      "wape": 0.11484058013478124,
+      "mae": 67.6135288018761,
+      "bias": -0.004849489630984976,
+      "mean_mase7": 0.9403606455381588,
+      "mean_rmsse": 0.8184467534819211
+    },
+    {
+      "model": "Ridge100",
+      "wape": 0.1257900532333022,
+      "mae": 74.15540001070673,
+      "bias": -0.038833640324234815,
+      "mean_mase7": 0.9985990342252751,
+      "mean_rmsse": 0.8608443017083878
+    },
+    {
+      "model": "Ridge10",
+      "wape": 0.12579036271128535,
+      "mae": 74.15592081451345,
+      "bias": -0.03876434654422176,
+      "mean_mase7": 0.9986840322091786,
+      "mean_rmsse": 0.860887632711016
+    },
+    {
+      "model": "WeekdayMean8",
+      "wape": 0.13481161092186392,
+      "mae": 79.37573341836735,
+      "bias": -0.05403920023084168,
+      "mean_mase7": 1.003396499145117,
+      "mean_rmsse": 0.8836982372513871
+    },
+    {
+      "model": "ETS",
+      "wape": 0.1370071929350571,
+      "mae": 80.74357394065645,
+      "bias": -0.04056715885739549,
+      "mean_mase7": 1.0165726020879127,
+      "mean_rmsse": 0.9020124668580866
+    },
+    {
+      "model": "ETSLog",
+      "wape": 0.15963983709598015,
+      "mae": 93.51107831143779,
+      "bias": -0.11495050734177911,
+      "mean_mase7": 1.1043837517517552,
+      "mean_rmsse": 0.9598474471768643
+    },
+    {
+      "model": "SeasonalNaive7",
+      "wape": 0.16622885717282726,
+      "mae": 97.77410714285713,
+      "bias": -0.0571746849117389,
+      "mean_mase7": 1.2292316035910669,
+      "mean_rmsse": 1.093908167205965
+    }
+  ],
+  "test": {
+    "wape": 0.0998928864230194,
+    "mae": 62.7777864040633,
+    "bias": -0.01294845244379121,
+    "mean_mase7": 0.8858124825926547,
+    "mean_rmsse": 0.7906104157950479,
+    "actual_units": 1231764.0,
+    "predicted_units": 1215814.562424026,
+    "coverage90": 0.9137755102040817,
+    "mean_interval_width": 304.65634448221704,
+    "relative_wape_reduction_vs_development_selected_baseline": 0.17097394664507892,
+    "comparison_baseline": "WeekdayMean8"
+  },
+  "baselines": [
+    {
+      "model": "SeasonalNaive7",
+      "wape": 0.13208211962681163,
+      "mae": 83.00714285714285,
+      "bias": -0.07359201925044083,
+      "mean_mase7": 1.1504008255357001,
+      "mean_rmsse": 1.0273705786722314,
+      "actual_units": 1231764.0,
+      "predicted_units": 1141116.0
+    },
+    {
+      "model": "WeekdayMean8",
+      "wape": 0.12049426675889213,
+      "mae": 75.72474489795918,
+      "bias": -0.042148901900039296,
+      "mean_mase7": 1.0105300912589894,
+      "mean_rmsse": 0.8919865569315086,
+      "actual_units": 1231764.0,
+      "predicted_units": 1179846.5
+    }
+  ],
+  "departments": [
+    {
+      "department": "FOODS_1",
+      "wape": 0.16665197659679973,
+      "mae": 60.922605973113654,
+      "bias": -0.14786765889362743,
+      "mean_mase7": 1.165733693064887,
+      "mean_rmsse": 1.1457820543312505,
+      "actual_units": 102359.0,
+      "predicted_units": 87223.41430330719,
+      "coverage90": 0.8821428571428571
+    },
+    {
+      "department": "FOODS_2",
+      "wape": 0.10578821936904503,
+      "mae": 62.4161828729441,
+      "bias": 0.011941523310702225,
+      "mean_mase7": 0.7581007412193805,
+      "mean_rmsse": 0.7451493721494105,
+      "actual_units": 165203.0,
+      "predicted_units": 167175.77547549794,
+      "coverage90": 0.925
+    },
+    {
+      "department": "FOODS_3",
+      "wape": 0.07952564174652917,
+      "mae": 160.45036674749903,
+      "bias": -0.008774749074180294,
+      "mean_mase7": 0.6647602435263333,
+      "mean_rmsse": 0.5481764411700937,
+      "actual_units": 564926.0,
+      "predicted_units": 559968.9161045196,
+      "coverage90": 0.95
+    },
+    {
+      "department": "HOBBIES_1",
+      "wape": 0.12173194143251717,
+      "mae": 44.586062577394166,
+      "bias": -0.012379055328822214,
+      "mean_mase7": 0.7439864079023528,
+      "mean_rmsse": 0.664840764300115,
+      "actual_units": 102554.0,
+      "predicted_units": 101284.47835980797,
+      "coverage90": 0.9321428571428572
+    },
+    {
+      "department": "HOBBIES_2",
+      "wape": 0.24660430305732634,
+      "mae": 11.715465854530553,
+      "bias": -0.15452318496190642,
+      "mean_mase7": 1.0406074142448443,
+      "mean_rmsse": 1.0564268388026048,
+      "actual_units": 13302.0,
+      "predicted_units": 11246.53259363672,
+      "coverage90": 0.8107142857142857
+    },
+    {
+      "department": "HOUSEHOLD_1",
+      "wape": 0.09709668642423974,
+      "mae": 77.09719643800696,
+      "bias": 0.03512842657513597,
+      "mean_mase7": 0.9026394748940632,
+      "mean_rmsse": 0.6701929220351259,
+      "actual_units": 222327.0,
+      "predicted_units": 230136.99769517026,
+      "coverage90": 0.95
+    },
+    {
+      "department": "HOUSEHOLD_2",
+      "wape": 0.10200603706132133,
+      "mae": 22.256624364954657,
+      "bias": -0.037885716987441705,
+      "mean_mase7": 0.9248594032967224,
+      "mean_rmsse": 0.7037045177767346,
+      "actual_units": 61093.0,
+      "predicted_units": 58778.447892086224,
+      "coverage90": 0.9464285714285714
+    }
+  ],
+  "horizons": [
+    {
+      "horizon": "1–7",
+      "wape": 0.09264004592241108,
+      "mae": 54.79261687542377,
+      "bias": 0.0011790409311536818,
+      "mean_mase7": 0.7883844395760181,
+      "mean_rmsse": 0.6804938729706302,
+      "actual_units": 289814.0,
+      "predicted_units": 290155.7025684214
+    },
+    {
+      "horizon": "8–14",
+      "wape": 0.10877572276409524,
+      "mae": 69.15294479528333,
+      "bias": 0.006780807558111943,
+      "mean_mase7": 0.9996402950457459,
+      "mean_rmsse": 0.863281714527789,
+      "actual_units": 311512.0,
+      "predicted_units": 313624.30292404257
+    },
+    {
+      "horizon": "15–21",
+      "wape": 0.10217968067414927,
+      "mae": 68.15426406957869,
+      "bias": -0.03258358041422479,
+      "mean_mase7": 0.8557881644111531,
+      "mean_rmsse": 0.7251655536198004,
+      "actual_units": 326832.0,
+      "predicted_units": 316182.6432460581
+    },
+    {
+      "horizon": "22–28",
+      "wape": 0.09524036659098979,
+      "mae": 59.011319875967445,
+      "bias": -0.025539964014202624,
+      "mean_mase7": 0.899437031337702,
+      "mean_rmsse": 0.7594999395580574,
+      "actual_units": 303606.0,
+      "predicted_units": 295851.913685504
+    }
+  ],
+  "example_series": "CA_1__FOODS_3",
+  "recommendation": "historical_forecast_support"
+}

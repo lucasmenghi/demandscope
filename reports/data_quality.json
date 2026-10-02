@@ -1,0 +1,17 @@
+{
+  "product_store_series": 30490,
+  "stores": 10,
+  "departments": 7,
+  "modeled_series": 70,
+  "calendar_days": 1969,
+  "observed_days": 1941,
+  "observed_panel_rows": 135870,
+  "development_end": "2016-04-24",
+  "test_start": "2016-04-25",
+  "test_end": "2016-05-22",
+  "zeros": 363,
+  "negative_sales": 0,
+  "missing_days": 0,
+  "total_units_all_observed": 66927173,
+  "scope": "All 70 store-department series; prices excluded; no official full-hierarchy scoring."
+}

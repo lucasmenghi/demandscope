@@ -1,0 +1,38 @@
+[
+  {
+    "page": "demandscope.html",
+    "viewport_width": 1440,
+    "forecast_layers": "passed",
+    "department_selection": "passed",
+    "images": "passed",
+    "horizontal_overflow": false,
+    "javascript_errors": []
+  },
+  {
+    "page": "demandscope.html",
+    "viewport_width": 390,
+    "forecast_layers": "passed",
+    "department_selection": "passed",
+    "images": "passed",
+    "horizontal_overflow": false,
+    "javascript_errors": []
+  },
+  {
+    "page": "demandscope-en.html",
+    "viewport_width": 1440,
+    "forecast_layers": "passed",
+    "department_selection": "passed",
+    "images": "passed",
+    "horizontal_overflow": false,
+    "javascript_errors": []
+  },
+  {
+    "page": "demandscope-en.html",
+    "viewport_width": 390,
+    "forecast_layers": "passed",
+    "department_selection": "passed",
+    "images": "passed",
+    "horizontal_overflow": false,
+    "javascript_errors": []
+  }
+]
